@@ -28,10 +28,10 @@ class Solution:
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        row,col=len(matrix),len(matrix[0])
-        for i in range(row):
-            if target<=matrix[i][col-1]:
-                print(matrix[i][:col])
-                if target in matrix[i][:col]:
+        m,n=len(matrix),len(matrix[0])
+        for i in range(m):
+            if target<=matrix[i][n-1]:
+                print(matrix[i][:n])
+                if target in matrix[i][:n]:
                     return True
         return False
